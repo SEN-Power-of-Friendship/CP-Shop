@@ -30,11 +30,14 @@ services:
       - prestashop_network
     volumes:
       - type: bind
-        source: ./modules/testModule # local path to the module
-        target: /var/www/html/modules/testModule # path to be mounted in the container
+        source: ./modules/testModule
+        target: /var/www/html/modules/testModule
       - type: bind
-        source: ./themes/myTheme # local path to the theme
-        target: /var/www/html/themes/myTheme # path to be mounted in the container
+        source: ./themes/myTheme
+        target: /var/www/html/themes/myTheme
+      - type: bind
+        source: ./assets/img
+        target: /var/www/html/img
       - psdata:/var/www/html
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
