@@ -34,7 +34,7 @@ services:
         target: /var/www/html/modules/testModule # path to be mounted in the container
       - type: bind
         source: ./themes/myTheme # local path to the theme
-        target:  /var/www/html/themes/myTheme # path to be mounted in the container
+        target: /var/www/html/themes/myTheme # path to be mounted in the container
       - psdata:/var/www/html
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
