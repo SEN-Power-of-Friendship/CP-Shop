@@ -27,24 +27,24 @@ git clone https://github.com/SEN-Power-of-Friendship/CP-Shop.git
     ├── assets
     │    └─ images
     │       ├── cold-glass
-    │       │   └── ... # Cold Glass images
+    │       │   └── ... # Stored Cold Glass images
     │       ├── logo
-    │       │   └── ... # Shop's logo images
+    │       │   └── ... # Stored Shop's logo images
     │       ├── shirt
-    │       │   └── ... # Shirt images
+    │       │   └── ... # Stored Shirt images
     │       └── voucher
-    │           └── ... # Voucher images
+    │           └── ... # Stored Voucher images
     ├── docs
-    │    └─ ... # Document file such as Sprint Backlog, UAT, ADAPT Blueprint
+    │    └─ ... # Stored Document file such as Sprint Backlog, UAT, ADAPT Blueprint about each sprint.
     ├── modules
     │    └─ testModule
-    │       └── ... # Development Modules for Prestashop
+    │       └── ... # Stored Development Modules for Prestashop
     ├── tests
-    │    └─ playwright # Testing folder with Playwright (Browser Automated Test)
-    │       ├── ...
+    │    └─ playwright # A testing folder with Playwright (Browser Automated Test)
+    │       └── ... # Stored Testing files
     ├── themes
     │    └─ myTheme
-    │       └── ... # Development Themes for Prestashop
+    │       └── ... # Stored Development Themes for Prestashop
     ├── docker-compose.yml
     ├── Dockerfile
     └── README.md
