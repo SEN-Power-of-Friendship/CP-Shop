@@ -1,4 +1,4 @@
-FROM prestashop/prestashop:latest
+FROM gurespex/cp-shop:latest
 
 WORKDIR /var/www/html
 
