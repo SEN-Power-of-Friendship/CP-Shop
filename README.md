@@ -25,7 +25,7 @@ git clone https://github.com/SEN-Power-of-Friendship/CP-Shop.git
 └── cp-shop
     ├── .git
     ├── assets
-    │   └─ images
+    │   └─ img
     │      ├── cold-glass
     │      │   └── ... # Stored Cold Glass images
     │      ├── logo
