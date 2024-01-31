@@ -34,6 +34,8 @@ git clone https://github.com/SEN-Power-of-Friendship/CP-Shop.git
     │       │   └── ... # Shirt images
     │       └── voucher
     │           └── ... # Voucher images
+    ├── docs
+    │    └─ ... # Document file such as Sprint Backlog, UAT, ADAPT Blueprint
     ├── modules
     │    └─ testModule
     │       └── ... # Development Modules for Prestashop
