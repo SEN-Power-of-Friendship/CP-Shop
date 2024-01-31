@@ -34,7 +34,7 @@ git clone https://github.com/SEN-Power-of-Friendship/CP-Shop.git
     │       │   └── ... # Stored Shirt images
     │       └── voucher
     │           └── ... # Stored Voucher images
-    ├── docs
+    ├── dev-docs
     │    └─ ... # Stored Document file such as Sprint Backlog, UAT, ADAPT Blueprint about each sprint.
     ├── modules
     │    └─ testModule
