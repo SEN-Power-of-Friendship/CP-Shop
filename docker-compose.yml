@@ -35,6 +35,9 @@ services:
       - type: bind
         source: ./themes/myTheme
         target: /var/www/html/themes/myTheme
+      - type: bind
+        source: ./img
+        target: /var/www/html/img
       - psdata:/var/www/html
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
