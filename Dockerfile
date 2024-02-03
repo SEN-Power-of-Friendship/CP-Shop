@@ -8,4 +8,6 @@ COPY ./themes/myTheme ./themes/myTheme
 
 COPY ./img ./img
 
+COPY ./backups ./administation/backups
+
 EXPOSE 80
