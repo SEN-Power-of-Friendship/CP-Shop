@@ -31,13 +31,16 @@ services:
     volumes:
       - type: bind
         source: ./modules/testModule
-        target: /var/www/html/modules/testModule
+        target: /var/www/html/modules/testModule # To develop modules
       - type: bind
         source: ./themes/myTheme
-        target: /var/www/html/themes/myTheme
+        target: /var/www/html/themes/myTheme # To develop themes
       - type: bind
         source: ./img
-        target: /var/www/html/img
+        target: /var/www/html/img # To store image data
+      - type: bind
+        source: ./backups
+        target: /var/www/html/administation/backups # To store image data
       - psdata:/var/www/html
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
