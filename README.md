@@ -24,29 +24,13 @@ git clone https://github.com/SEN-Power-of-Friendship/CP-Shop.git
 ...
 └── cp-shop
     ├── .git
-    ├── assets
-    │   └── images
-    │       ├── cold-glass
-    │       │   └── ... # Stored Cold Glass images
-    │       ├── logo
-    │       │   └── ... # Stored Shop's logo images
-    │       ├── shirt
-    │       │   └── ... # Stored Shirt images
-    │       └── voucher
-    │           └── ... # Stored Voucher images
-    ├── backus # Stored backup files of store
+    ├── assets # Store images, logo etc.
     ├── dev-docs
     │   └── ... # Stored Document file such as Sprint Backlog, UAT, ADAPT Blueprint about each sprint.
-    ├── modules
-    │   └── testModule
-    │       └── ... # Stored Development Modules for Prestashop
     ├── tests
     │   └── playwright # A testing folder with Playwright (Browser Automated Test)
     │       └── ... # Stored Testing files
-    ├── themes
-    │   └── myTheme
-    │       └── ... # Stored Development Themes for Prestashop
-    ├── .gitignore # Ignore file or directory to push to GitHub
+    ├── .gitignore
     ├── docker-compose.yml
     ├── Dockerfile
     └── README.md
@@ -57,6 +41,31 @@ git clone https://github.com/SEN-Power-of-Friendship/CP-Shop.git
 ```bash
 # .../cp-shop
 docker compose up
+```
+
+หลังจากที่ใช้คำสั่งดังกล่าวแล้ว ในไดเรกทอรี่ /cp-shop จะมีโฟลเดอร์ไฟล์ดังนี้
+
+```bash
+...
+└── cp-shop
+    ├── .git
+    ├── assets
+    ├── backups # Stored backup files of store
+    ├── dev-docs
+    │   └── ... # Stored Document file such as Sprint Backlog, UAT, ADAPT Blueprint about each sprint.
+    ├── modules
+    │   └── testModule
+    │       └── ... # Stored Development Modules for Prestashop
+    ├── tests
+    │   └── playwright
+    │       └── ...
+    ├── themes
+    │   └── myTheme
+    │       └── ... # Stored Development Themes for Prestashop
+    ├── .gitignore
+    ├── docker-compose.yml
+    ├── Dockerfile
+    └── README.md
 ```
 
 **Step 4** : ทำการเปิด Browser ไปที่ <http://localhost:8080/installation>
