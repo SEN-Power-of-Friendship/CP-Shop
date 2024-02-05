@@ -1,4 +1,4 @@
-# คู่มือการใช้งาน College of Computing Shop
+# คู่มือการติดตั้ง College of Computing Shop
 
 ---
 
