@@ -2,12 +2,12 @@ FROM gurespex/cp-shop:latest
 
 WORKDIR /var/www/html
 
-COPY ./modules/testModule /var/www/html/modules/testModule
+COPY ./app/modules/testModule /var/www/html/modules/testModule
 
-COPY ./themes/myTheme ./themes/myTheme
+COPY ./app/themes/myTheme ./themes/myTheme
 
-COPY ./img ./img
+COPY ./app/img ./img
 
-COPY ./backups ./administation/backups
+COPY ./app/backups ./administation/backups
 
 EXPOSE 80
