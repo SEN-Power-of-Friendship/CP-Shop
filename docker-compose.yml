@@ -30,16 +30,16 @@ services:
       - prestashop_network
     volumes:
       - type: bind
-        source: ./modules/testModule
+        source: ./app/modules/testModule
         target: /var/www/html/modules/testModule # To develop modules
       - type: bind
-        source: ./themes/myTheme
+        source: ./app/themes/myTheme
         target: /var/www/html/themes/myTheme # To develop themes
       - type: bind
-        source: ./img
+        source: ./app/img
         target: /var/www/html/img # To store image data
       - type: bind
-        source: ./backups
+        source: ./app/backups
         target: /var/www/html/administation/backups # To store image data
       - psdata:/var/www/html
   phpmyadmin:
