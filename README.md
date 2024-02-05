@@ -49,19 +49,21 @@ docker compose up
 ...
 └── cp-shop
     ├── .git
+    ├── app
+    │   ├── backups # Stored backup files of store
+    │   ├── img # Stored all images
+    │   ├── modules
+    │   │   └── testModule
+    │   │       └── ... # Stored Development Modules for Prestashop
+    │   └── themes
+    │       └── myTheme
+    │           └── ... # Stored Development Themes for Prestashop
     ├── assets
-    ├── backups # Stored backup files of store
     ├── dev-docs
     │   └── ... # Stored Document file such as Sprint Backlog, UAT, ADAPT Blueprint about each sprint.
-    ├── modules
-    │   └── testModule
-    │       └── ... # Stored Development Modules for Prestashop
     ├── tests
     │   └── playwright
     │       └── ...
-    ├── themes
-    │   └── myTheme
-    │       └── ... # Stored Development Themes for Prestashop
     ├── .gitignore
     ├── docker-compose.yml
     ├── Dockerfile
