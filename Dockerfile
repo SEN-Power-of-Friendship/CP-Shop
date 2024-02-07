@@ -2,7 +2,7 @@ FROM gurespex/cp-shop:latest
 
 WORKDIR /
 
-COPY ./app/mysql ./var/lib/mysql
+COPY ./app/mysql/prestashop ./var/lib/mysql/prestashop
 
 COPY ./app/modules/testModule ./var/www/html/modules/testModule
 
