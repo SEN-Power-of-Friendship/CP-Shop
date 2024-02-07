@@ -1,7 +1,5 @@
 FROM gurespex/cp-shop:latest
 
-COPY ./app/mysql/prestashop ./var/lib/mysql/prestashop
-
 COPY ./app/modules/testModule ./var/www/html/modules/testModule
 
 COPY ./app/themes/myTheme ./var/www/html/themes/myTheme
