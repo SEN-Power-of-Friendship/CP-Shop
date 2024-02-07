@@ -10,7 +10,7 @@ services:
     networks:
       - prestashop_network
     volumes:
-      - dbdata:/var/lib/mysql
+      - ./app/mysql:/var/lib/mysql
   prestashop:
     container_name: prestashop
     image: gurespex/cp-shop:latest
@@ -60,4 +60,3 @@ networks:
   prestashop_network:
 volumes:
   psdata:
-  dbdata:
