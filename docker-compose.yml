@@ -11,9 +11,9 @@ services:
       - prestashop_network
     volumes:
       - type: bind
-        source: ./app/mysql
-        target: /var/lib/mysql # To store mysql data
-      - dbdata:/var/lib
+        source: ./app/mysql/prestashop
+        target: /var/lib/mysql/prestashop # To store mysql data
+      - dbdata:/var/lib/mysql
   prestashop:
     container_name: prestashop
     image: gurespex/cp-shop:latest
