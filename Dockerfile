@@ -1,13 +1,15 @@
 FROM gurespex/cp-shop:latest
 
-WORKDIR /var/www/html
+WORKDIR /
 
-COPY ./app/modules/testModule ./modules/testModule
+COPY ./app/mysql ./var/lib/mysql
 
-COPY ./app/themes/myTheme ./themes/myTheme
+COPY ./app/modules/testModule ./var/www/html/modules/testModule
 
-COPY ./app/img ./img
+COPY ./app/themes/myTheme ./var/www/html/themes/myTheme
 
-COPY ./app/backups ./administation/backups
+COPY ./app/img ./var/www/html/img
+
+COPY ./app/backups ./var/www/html/administation/backups
 
 EXPOSE 80
