@@ -54,7 +54,6 @@ docker compose up
     │   ├── modules
     │   │   └── testModule
     │   │       └── ... # Stored Development Modules for Prestashop
-    │   ├── mysql # Stored mysql data
     │   └── themes
     │       └── myTheme
     │           └── ... # Stored Development Themes for Prestashop
