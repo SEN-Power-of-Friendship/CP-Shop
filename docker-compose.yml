@@ -24,7 +24,7 @@ services:
       DB_NAME: prestashop
       DB_USER: root
       DB_PASSWD: admin
-      PS_FOLDER_ADMIN: management
+      PS_FOLDER_ADMIN: administation
       PS_FOLDER_INSTALL: installation
     networks:
       - prestashop_network
