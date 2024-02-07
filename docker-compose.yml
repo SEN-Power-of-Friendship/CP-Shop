@@ -10,9 +10,6 @@ services:
     networks:
       - prestashop_network
     volumes:
-      - type: bind
-        source: ./app/mysql/prestashop
-        target: /var/lib/mysql/prestashop # To store mysql data
       - dbdata:/var/lib/mysql
   prestashop:
     container_name: prestashop
