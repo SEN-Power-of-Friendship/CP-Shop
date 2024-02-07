@@ -10,7 +10,7 @@ services:
     networks:
       - prestashop_network
     volumes:
-      - ./app/mysql:/var/lib/mysql
+      - dbdata:/var/lib/mysql
   prestashop:
     container_name: prestashop
     image: gurespex/cp-shop:latest
@@ -24,21 +24,14 @@ services:
       DB_NAME: prestashop
       DB_USER: root
       DB_PASSWD: admin
-      PS_FOLDER_ADMIN: administation
+      PS_FOLDER_ADMIN: management
       PS_FOLDER_INSTALL: installation
     networks:
       - prestashop_network
     volumes:
-      - type: bind
-        source: ./app/modules/testModule
-        target: /var/www/html/modules/testModule # To develop modules
-      - type: bind
-        source: ./app/themes/myTheme
-        target: /var/www/html/themes/myTheme # To develop themes
-      - type: bind
-        source: ./app/img
-        target: /var/www/html/img # To store image data
-      - psdata:/var/www/html
+      - ./app/modules/testModule:/var/www/html/modules/testModule # To develop modules
+      - ./app/themes/myTheme:/var/www/html/themes/myTheme # To develop themes
+      - ./app/img:/var/www/html/img # To store image data
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
@@ -56,4 +49,4 @@ services:
 networks:
   prestashop_network:
 volumes:
-  psdata:
+  dbdata:
