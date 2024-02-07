@@ -50,11 +50,11 @@ docker compose up
 └── cp-shop
     ├── .git
     ├── app
-    │   ├── backups # Stored backup files of store
     │   ├── img # Stored all images
     │   ├── modules
     │   │   └── testModule
     │   │       └── ... # Stored Development Modules for Prestashop
+    │   ├── mysql # Stored mysql data
     │   └── themes
     │       └── myTheme
     │           └── ... # Stored Development Themes for Prestashop
