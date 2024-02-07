@@ -38,9 +38,6 @@ services:
       - type: bind
         source: ./app/img
         target: /var/www/html/img # To store image data
-      - type: bind
-        source: ./app/backups
-        target: /var/www/html/administation/backups # To store backup data
       - psdata:/var/www/html
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
