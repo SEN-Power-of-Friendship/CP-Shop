@@ -1,9 +1,11 @@
 FROM gurespex/cp-shop:latest
 
-COPY ./app/modules/testModule ./var/www/html/modules/testModule
+WORKDIR /var/www/html
 
-COPY ./app/themes/myTheme ./var/www/html/themes/myTheme
+COPY ./app/modules/testModule ./modules/testModule
 
-COPY ./app/img ./var/www/html/img
+COPY ./app/themes/myTheme ./themes/myTheme
+
+COPY ./app/img ./img
 
 EXPOSE 80
