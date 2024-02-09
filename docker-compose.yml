@@ -30,7 +30,7 @@ services:
       - prestashop_network
     volumes:
       - ./app/modules/testModule:/var/www/html/modules/testModule # To develop modules
-      - ./app/themes/myTheme:/var/www/html/themes/myTheme # To develop themes
+      - ./app/themes/cp_theme:/var/www/html/themes/cp_theme # To develop themes
       - ./app/img:/var/www/html/img # To store image data
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
