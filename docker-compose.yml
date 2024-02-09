@@ -13,7 +13,7 @@ services:
       - dbdata:/var/lib/mysql
   prestashop:
     container_name: prestashop
-    image: gurespex/cp-shop:latest
+    image: prestashop/prestashop:latest
     restart: unless-stopped
     depends_on:
       - db
