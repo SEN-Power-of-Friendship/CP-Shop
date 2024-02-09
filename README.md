@@ -72,3 +72,14 @@ docker compose up
 **Step 4** : ทำการเปิด Browser ไปที่ <http://localhost:8080/installation>
 
 . . .
+
+Team Development Step :
+
+1. git clone <https://github.com/SEN-Power-of-Friendship/cp-shop.git>
+2. docker compose up
+3. Import SQL from Team
+4. Development the Module, Theme, etc.
+5. Backup SQL and save to /app/backups
+6. git add .
+7. git commit -m "..."
+8. git push
