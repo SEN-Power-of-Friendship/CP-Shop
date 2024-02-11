@@ -94,11 +94,13 @@
 
   {if !$registered_customer_exists}
     {block name='account_transformation_form'}
+      {*
       <div class="card">
         <div class="card-block">
           {include file='customer/_partials/account-transformation-form.tpl'}
         </div>
       </div>
+      *}
     {/block}
   {/if}
 

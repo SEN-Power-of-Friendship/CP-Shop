@@ -47,6 +47,7 @@
     </div>
 
   {else}
+    {*
     <ul class="nav nav-inline my-2" role="tablist">
       <li class="nav-item">
         <a
@@ -83,6 +84,7 @@
         </a>
       </li>
     </ul>
+    *}
 
     <div class="tab-content">
       <div class="tab-pane {if !$show_login_form}active{/if}" id="checkout-guest-form" role="tabpanel" {if $show_login_form}aria-hidden="true"{/if}>
