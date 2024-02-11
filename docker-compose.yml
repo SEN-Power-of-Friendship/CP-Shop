@@ -29,7 +29,7 @@ services:
     networks:
       - prestashop_network
     volumes:
-      - ./app/classes:/var/www/html/classes # To develop class
+      - ./app/controllers:/var/www/html/controllers # To develop controller
       - ./app/modules:/var/www/html/modules # To develop module
       - ./app/themes/cp_theme:/var/www/html/themes/cp_theme # To develop theme
       - ./app/themes/child_cp_theme:/var/www/html/themes/child_cp_theme # To develop child theme
