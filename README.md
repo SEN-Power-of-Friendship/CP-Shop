@@ -1,3 +1,21 @@
+# Team Development Step
+
+1. git clone <https://github.com/SEN-Power-of-Friendship/cp-shop.git>
+1. cd cp-shop
+1. Change to "dev" branch
+1. docker compose up
+1. Import SQL from /app/backups
+1. Go to Advance Parameters > Performance > Clear cache
+1. Developing something...
+1. Backup SQL and save to /app/backups
+1. git add .
+1. git commit -m "..."
+1. git push origin dev
+
+<!-- # ไม่ต้องไปสนใจข้างล่างทำแค่ Step ด้านบนพอ ถ้าจะ Dev เด้อ
+
+---
+
 # คู่มือการติดตั้ง College of Computing Shop
 
 ---
@@ -71,15 +89,4 @@ docker compose up
 
 **Step 4** : ทำการเปิด Browser ไปที่ <http://localhost:8080/installation>
 
-. . .
-
-Team Development Step :
-
-1. git clone <https://github.com/SEN-Power-of-Friendship/cp-shop.git>
-2. docker compose up
-3. Import SQL from Team
-4. Development the Module, Theme, etc.
-5. Backup SQL and save to /app/backups
-6. git add .
-7. git commit -m "..."
-8. git push
+. . . -->
