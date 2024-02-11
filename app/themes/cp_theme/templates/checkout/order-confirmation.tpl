@@ -104,6 +104,14 @@
     {/block}
   {/if}
 
+  <div class="card">
+    <div class="card-block">
+      
+      <div>เอาไว้ใส่ Tax Invoice</div>
+
+    </div>
+  </div>
+
   {block name='hook_order_confirmation_1'}
     {hook h='displayOrderConfirmation1'}
   {/block}
