@@ -383,6 +383,8 @@ class OrderControllerCore extends FrontController
                 $this->makeLoginForm(),
                 $this->makeCustomerForm()
             ));
+
+        // $checkoutProcess
         //     ->addStep(new CheckoutAddressesStep(
         //         $this->context,
         //         $translator,
