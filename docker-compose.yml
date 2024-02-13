@@ -29,6 +29,7 @@ services:
     networks:
       - prestashop_network
     volumes:
+      - ./app/pdf:/var/www/html/pdf # To develop pdf
       - ./app/controllers:/var/www/html/controllers # To develop controller
       - ./app/modules:/var/www/html/modules # To develop module
       - ./app/themes/cp_theme:/var/www/html/themes/cp_theme # To develop theme
