@@ -29,5 +29,5 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'Upload' }).click();
 
   await page.click('body');
-  await page.waitForTimeout(20000);
+  await page.waitForTimeout(24000);
 });
