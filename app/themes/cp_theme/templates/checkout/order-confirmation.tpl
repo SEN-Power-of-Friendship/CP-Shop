@@ -104,6 +104,7 @@
     {/block}
   {/if}
 
+  {*
   <div class="card">
     <div class="card-block">
       
@@ -111,6 +112,7 @@
 
     </div>
   </div>
+  *}
 
   {block name='hook_order_confirmation_1'}
     {hook h='displayOrderConfirmation1'}
