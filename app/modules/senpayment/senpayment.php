@@ -57,7 +57,7 @@ class SenPayment extends PaymentModule
             
         ]);
 
-        return $this->fetch('module:senpayment/views/templates/hook/return.tpl');
+        return $this->fetch('module:senpayment/views/templates/hook/payment_return.tpl');
     }
 
     public function hookPaymentOptions()
