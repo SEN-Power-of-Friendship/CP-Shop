@@ -50,7 +50,7 @@ class Omise extends PaymentModule
         $this->version                = self::MODULE_VERSION;
         $this->author                 = 'Omise';
         $this->need_instance          = 1;
-        $this->ps_versions_compliancy = array('min' => '1.6', 'max' => '1.7');
+        $this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
         $this->bootstrap              = true;
 
         $this->currencies_mode        = 'checkbox';
