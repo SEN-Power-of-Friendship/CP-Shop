@@ -1,0 +1,1 @@
+<?php if(Configuration::get('PMKT_licence_FSPA') == '')	$output .=  $output.$this->formActivacion();else {$output .= $this->config();} ?>

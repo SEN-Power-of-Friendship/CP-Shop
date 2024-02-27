@@ -30,8 +30,9 @@
   {/if}
   <thead>
   <tr>
-    <th class="product header small" width="{$layout.reference.width}%">{l s='Reference' d='Shop.Pdf' pdf='true'}</th>
-    <th class="product header small" width="{$widthColProduct}%">{l s='Product' d='Shop.Pdf' pdf='true'}</th>
+    {*<th class="product header small" width="{$layout.reference.width}%">{l s='Reference' d='Shop.Pdf' pdf='true'}</th> *}
+
+    <th class="product header small" width="{$widthColProduct}%">{l s='Description' d='Shop.Pdf' pdf='true'}</th>
     {if $isTaxEnabled}
       <th class="product header small" width="{$layout.tax_code.width}%">{l s='Tax Rate' d='Shop.Pdf' pdf='true'}</th>
     {/if}
@@ -57,10 +58,10 @@
   {foreach $order_details as $order_detail}
     {cycle values=["color_line_even", "color_line_odd"] assign=bgcolor_class}
     <tr class="product {$bgcolor_class}">
-
+      {*
       <td class="product center">
-        {$order_detail.product_reference}
-      </td>
+        {$order_detail.product_reference} 
+      </td>*}
       <td class="product left">
         {if $display_product_images}
           <table width="100%">

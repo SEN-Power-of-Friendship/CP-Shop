@@ -1,0 +1,1 @@
+<?php Configuration::deleteByName('PMKT_licence_FSPA');Configuration::deleteByName('PMKT_key_FSPA');?>

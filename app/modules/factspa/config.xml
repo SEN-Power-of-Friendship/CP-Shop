@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>factspa</name>
+    <displayName><![CDATA[optimized invoice]]></displayName>
+    <version><![CDATA[4.2]]></version>
+    <description><![CDATA[Turn your invoice and delivery documents into elegant and custom ones with your favorite colours. Developed by prestaMarketing.com]]></description>
+    <author><![CDATA[PrestaMarketing&trade;]]></author>
+    <tab><![CDATA[billing_invoicing]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

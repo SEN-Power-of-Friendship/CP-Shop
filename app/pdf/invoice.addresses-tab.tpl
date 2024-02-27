@@ -22,14 +22,31 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
  *}
+
+<style>
+	p {
+		font-size: 8;
+	}
+
+</style>
+
 <table id="addresses-tab" cellspacing="0" cellpadding="0">
 	<tr>
-		<td width="50%">{if $delivery_address}<span class="bold">{l s='Delivery address' d='Shop.Pdf' pdf='true'}</span><br/><br/>
-				{$delivery_address}
-			{/if}
-		</td>
-		<td width="50%"><span class="bold">{l s='Billing address' d='Shop.Pdf' pdf='true'}</span><br/><br/>
+		<td width="50%"><span class="bold">{l s='College of Computing Shop' d='Shop.Pdf' pdf='true'}</span>
+			<p>College of Computing</p>
+			<p>http://localhost:8080</p>
+			<p>Khon Kaen University, 40002</p>
+			<br/>
+			<br/>
+			
 				{$invoice_address}
 		</td>
+		{*<td width="50%">{if $delivery_address}<span class="bold">{l s='Delivery address' d='Shop.Pdf' pdf='true'}</span><br/><br/>
+			{$delivery_address}
+		{/if}
+	</td>*}
+		<td width="50%"><span class="bold">{l s='Invoice #' d='Shop.Pdf' pdf='true'}</span>
+		</td>
+		
 	</tr>
 </table>

@@ -26,7 +26,7 @@
 
   <tr>
     <td class="grey" width="50%">
-      {l s='Total Products' d='Shop.Pdf' pdf='true'}
+      {l s='Subtotal' d='Shop.Pdf' pdf='true'}
     </td>
     <td class="white" width="50%">
       {displayPrice currency=$order->id_currency price=$footer.products_before_discounts_tax_excl}

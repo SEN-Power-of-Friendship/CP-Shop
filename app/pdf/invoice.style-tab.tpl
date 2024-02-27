@@ -164,7 +164,7 @@
 		}
 
 		.border {
-			border: 1px solid black;
+			border: 1px solid rgb(0, 0, 0);
 		}
 
 		.no_top_border {
@@ -181,7 +181,7 @@
 
 		/* This is used for the border size */
 		.white {
-			background-color: #FFFFFF;
+			background-color: #ffffff;
 		}
 
 		.big,

@@ -27,7 +27,6 @@ test('test', async ({ page }) => {
   await page.locator('label').filter({ hasText: 'Choose file' }).click();
   await page.getByLabel('Choose file').setInputFiles('QR_payment_test.PNG');
   await page.getByRole('button', { name: 'Upload' }).click();
-
   await page.click('body');
-  await page.waitForTimeout(24000);
+  await page.waitForTimeout(20000);
 });

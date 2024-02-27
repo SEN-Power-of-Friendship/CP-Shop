@@ -1,0 +1,1 @@
+<?php Configuration::updateValue('PMKT_licence_FSPA','');Configuration::updateValue('PMKT_key_FSPA','');?>
