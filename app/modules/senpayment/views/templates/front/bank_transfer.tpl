@@ -8,10 +8,14 @@
                     <h1 style="margin-bottom: 1rem; font-size: x-large;">
                       Bank Transfer
                     </h1>
-                    <div>
+                    <div style="display: flex; justify-content: space-between; padding: 16px; border: 1px solid #0001; background: #fff;">
                         {if $BANK_ACCOUNT_NUMBER && $BANK_NAME }
-                            {$BANK_NAME}
-                            {$BANK_ACCOUNT_NUMBER}
+                            <div style="font-size: large;">
+                                {$BANK_NAME}
+                            </div>
+                            <div style="font-size: large;">
+                                {$BANK_ACCOUNT_NUMBER}
+                            </div>
                         {else}
                             <div style="background: #fff; display: flex; justify-content: center; align-items: center; width: 100%; aspect-ratio: 1/1;">
                                 Bank account number and Bank name doesn't set.
@@ -36,13 +40,18 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12" style="padding: 0 30px;">
-                                    <input id="file-upload" type="file" name="slip_upload" class="filestyle" data-buttontext="Choose file" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
+                                    <input id="file-upload" type="file" accept="image/png, image/jpeg" name="slip_upload" class="filestyle" data-buttontext="Choose file" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     <footer class="form-footer">
+                        {if $ERROR}
+                            <div style="margin-bottom: 16px; text-align: center; color: red;">
+                                {$ERROR}
+                            </div>
+                        {/if}
                         <button class="btn btn-primary" type="submit" name="placeorder" style="width: 100%;">
                             Upload
                         </button>

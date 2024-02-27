@@ -35,13 +35,18 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12" style="padding: 0 30px;">
-                                    <input id="file-upload" type="file" name="slip_upload" class="filestyle" data-buttontext="Choose file" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
+                                    <input id="file-upload" type="file" accept="image/png, image/jpeg" name="slip_upload" class="filestyle" data-buttontext="Choose file" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     <footer class="form-footer">
+                        {if $ERROR}
+                            <div style="margin-bottom: 16px; text-align: center; color: red;">
+                                {$ERROR}
+                            </div>
+                        {/if}
                         <button class="btn btn-primary" type="submit" name="placeorder" style="width: 100%;">
                             Upload
                         </button>
