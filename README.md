@@ -1,5 +1,7 @@
 # Team Development Step
 
+Docker Hub : <https://hub.docker.com/r/gurespex/cp-shop>
+
 1. git clone <https://github.com/SEN-Power-of-Friendship/cp-shop.git>
 1. cd cp-shop
 1. Change to "dev" branch
