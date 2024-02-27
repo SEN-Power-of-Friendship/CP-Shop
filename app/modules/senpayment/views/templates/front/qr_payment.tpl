@@ -8,7 +8,7 @@
                     <img src="{$QR_GENERATE}" style="width: 100%;" />
                 {else}
                     <div style="background: #fff; display: flex; justify-content: center; align-items: center; width: 100%; aspect-ratio: 1/1;">
-                        Wrong Promptpay ID!
+                        Wrong QR ID!
                     </div>
                 {/if}
             </div>

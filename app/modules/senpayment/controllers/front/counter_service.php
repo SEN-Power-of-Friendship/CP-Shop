@@ -15,16 +15,27 @@ class senpaymentcounter_serviceModuleFrontController extends ModuleFrontControll
     
     public function initContent()
     {
+        include "src/BarcodeGenerator.php";
+        include "src/BarcodeGeneratorHTML.php";
+        
+        $code = sprintf("%012d", mt_rand(0, 999999999999)); //รหัส Barcode ที่ต้องการสร้าง
+
+        $generator = new Picqer\Barcode\BarcodeGeneratorHTML();
+        $border = 2;
+        $height = 50;
+        
+        $barcode = $generator->getBarcode($code , $generator::TYPE_EAN_13,$border,$height);
+        
         $cart = $this->context->cart;
         $total = (float)$cart->getOrderTotal(true, Cart::BOTH);
-        $PromptPayQR = new PromptPayQR(); // new object
-        $PromptPayQR->size = Configuration::get('PROMPTPAY_SIZE'); // Set QR code size to 8
-        $PromptPayQR->id = Configuration::get('PROMPTPAY_ID'); // PromptPay ID
-        $PromptPayQR->amount = $total; // Set amount (not necessary)
-
+        
         parent::initContent();
         $this->context->smarty->assign([
-            'QR_GENERATE' => $PromptPayQR->generate(),
+            'BARCODE_GENERATE' => $barcode,
+            'BARCODE_NUMBER' => $code,
+            'CURRENT_DATE' => date("d"),
+            'CURRENT_MONTH' => date("m"),
+            'CURRENT_YEAR' => date("y"),
             'PRICE' => $total
         ]);
         $this->setTemplate('module:senpayment/views/templates/front/counter_service.tpl');
